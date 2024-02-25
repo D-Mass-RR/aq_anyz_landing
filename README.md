@@ -16,7 +16,7 @@
 
 ### Code Style Guidelines
 
-- [Primitive obsession](https://elkevincodea.hashnode.dev/modeling-primitives-as-value-objects-in-typescript) 
+- [Primitive obsession](https://elkevincodea.hashnode.dev/modeling-primitives-as-value-objects-in-typescript) - Typing tip
 - [React style guide](https://react-styleguidist.js.org/docs/documenting/)  - Component Documentation Guidelines
 - [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)  - Readable meaning to commit messages
 
@@ -25,13 +25,6 @@
 - [TypeScript](https://www.typescriptlang.org/)
 - [Commit lint](https://github.com/conventional-changelog/commitlint) - helps your team adhering to a commit convention
 - [Netlify](https://www.netlify.com/) - zero-config deployment
-
-
-```bash
-npx degit jvidalv/vital my-vital-app
-cd my-vital-app
-yarn # If you don't have yarn installed, run: npm install -g yarn
-```
 
 ### Development
 
