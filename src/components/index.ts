@@ -1,3 +1,1 @@
-import Typography from "components/Typography.tsx";
-
-export default Typography;
+export { Typography } from "components/Typography.tsx";

@@ -1,4 +1,3 @@
-
 ## Features
 
 - ⚡️ [React 18](https://beta.reactjs.org/)
@@ -17,8 +16,8 @@
 ### Code Style Guidelines
 
 - [Primitive obsession](https://elkevincodea.hashnode.dev/modeling-primitives-as-value-objects-in-typescript) - Typing tip
-- [React style guide](https://react-styleguidist.js.org/docs/documenting/)  - Component Documentation Guidelines
-- [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)  - Readable meaning to commit messages
+- [React style guide](https://react-styleguidist.js.org/docs/documenting/) - Component Documentation Guidelines
+- [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) - Readable meaning to commit messages
 
 ### Dev tools
 
@@ -55,4 +54,3 @@ Go to [Netlify](https://app.netlify.com/start) and select your repository, `OK` 
 If pre-commit hooks are not working be sure that you have installed husky: `husky install`.
 
 By default this command should be triggered after yarn/npm deps are installed.
-

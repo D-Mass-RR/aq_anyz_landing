@@ -1,11 +1,7 @@
 import HomePage from "../modules/main";
 
 function App() {
-  return (
-    <main>
-      <HomePage/>
-    </main>
-  );
+  return <HomePage />;
 }
 
 export default App;

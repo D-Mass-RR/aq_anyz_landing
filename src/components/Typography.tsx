@@ -6,9 +6,10 @@ type Props = {
   type?: TypographyTypes;
   size?: number;
   color?: typeof COLORS;
+  children: string;
 };
-const Typography: FC<Props> = ({ type, size, color }) => {
-  return <>Hello Aq Anyz!</>;
+const Typography: FC<Props> = ({ children }) => {
+  return <span>{children}</span>;
 };
 
-export default Typography;
+export { Typography };

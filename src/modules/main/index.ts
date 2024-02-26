@@ -1,3 +1,3 @@
 import HomePage from "./pages/HomePage.tsx";
 
-export default HomePage
+export default HomePage;

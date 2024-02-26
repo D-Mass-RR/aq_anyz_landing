@@ -1,11 +1,17 @@
+/** Core **/
 import { FC } from "react";
-import Typography from "components/Typography.tsx";
+
+/** Components **/
+import { Header, FullPageSlider } from "../components";
 
 const HomePage: FC = () => {
   return (
-    <header>
-      <Typography></Typography>
-    </header>
+    <main className="h-full">
+      <Header />
+      <section className="bg-black">
+        <FullPageSlider />
+      </section>
+    </main>
   );
 };
 
