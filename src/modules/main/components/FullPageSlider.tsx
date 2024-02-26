@@ -16,22 +16,28 @@ const bg_images = [img1, img2, img3];
 // type Props = undefined;
 const FullPageSlider: FC = () => {
   return (
-    <Swiper
-      allowSlideNext={false}
-      allowSlidePrev={false}
-      watchSlidesProgress={true}
-      modules={[Controller]}
-      slidesPerView={1}
-    >
-      {bg_images.map((item, index) => (
-        <SwiperSlide
-          className="grid backdrop:blur-lg md:grid-cols-2 gap-y-10 md:gap-x-10 x-md:pt-10 w-full z-0"
-          key={index}
-        >
-          <img src={item} alt={item} className="brightness-50 blur-lg" />
-        </SwiperSlide>
-      ))}
-    </Swiper>
+    <div className="absolute top-0 w-full h-full bg-black z-0 ">
+      <Swiper
+        allowSlideNext={false}
+        allowSlidePrev={false}
+        watchSlidesProgress={true}
+        modules={[Controller]}
+        slidesPerView={1}
+      >
+        {bg_images.map((item, index) => (
+          <SwiperSlide
+            className="bg-black backdrop:blur-lg w-full sm:max-h-96 z-0"
+            key={index}
+          >
+            <img
+              src={item}
+              alt={item}
+              className="object-cover h-full brightness-50 blur-lg"
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    </div>
   );
 };
 

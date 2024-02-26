@@ -33,6 +33,8 @@ export default defineConfig((configEnv) => {
         components: resolve(__dirname, "src", "components"),
         assets: resolve(__dirname, "src", "assets"),
         hooks: resolve(__dirname, "src", "hooks"),
+        theme: resolve(__dirname, "src", "theme"),
+        modules: resolve(__dirname, "src", "modules"),
       },
     },
     css: {

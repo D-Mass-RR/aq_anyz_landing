@@ -9,9 +9,9 @@ const Header: FC = () => {
     <header className="absolute z-50 w-full">
       <nav>
         <div className="max-w-8xl mx-auto">
-          <div className="flex mx-auto justify-between w-full px-16">
+          <div className="flex mx-auto justify-between w-full px-8 lg:px-16">
             {/* Primary menu and logo */}
-            <div className="flex items-center w-full justify-between gap-16 lg:mt-12">
+            <div className="flex items-center w-full justify-between gap-16 lg:mt-12 mt-4">
               {/* logo */}
               <Logo />
               {/* primary */}
@@ -26,9 +26,9 @@ const Header: FC = () => {
             {/* secondary */}
             <div className="flex gap-6">
               {/* Mobile navigation toggle */}
-              <div className="lg:hidden flex items-center">
+              <div className="lg:hidden flex items-center pt-4">
                 <button onClick={() => setOpen((prev) => !prev)}>
-                  <Bars3Icon className="h-6" />
+                  <Bars3Icon className="h-6 text-white" />
                 </button>
               </div>
             </div>
@@ -36,18 +36,17 @@ const Header: FC = () => {
         </div>
         {/* mobile navigation */}
         <div
-          className={`fixed z-40 w-full  bg-gray-100 overflow-hidden flex flex-col lg:hidden gap-12  origin-top duration-700 ${
-            !open ? "h-0" : "h-full"
+          className={`absolute mt-2 w-full bg-white overflow-hidden flex flex-col lg:hidden gap-12 origin-top duration-700 ${
+            !open ? "h-0" : "h-80"
           }`}
         >
-          <div className="px-8">
-            <div className="flex flex-col gap-8 font-bold tracking-wider">
-              <a href="#" className="border-l-4 border-gray-600">
-                Features
-              </a>
-              <a href="#">Pricing</a>
-              <a href="#">Download</a>
-              <a href="#">Classic</a>
+          <div className="px-8 pt-4 text-lg">
+            <div className="flex flex-col gap-4 font-bold tracking-wider">
+              <a href="#">Меню</a>
+              <a href="#">Продукция</a>
+              <a href="#">О нас</a>
+              <a href="#">Карьера</a>
+              <a href="#">Контакты</a>
             </div>
           </div>
         </div>

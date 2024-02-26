@@ -4,8 +4,12 @@ type Props = ComponentPropsWithoutRef<"button"> & {
   children: string;
 };
 
-const Button: FC<Props> = ({ children, onClick }) => {
-  return <button onClick={onClick}>{children}</button>;
+const Button: FC<Props> = ({ children, onClick, className }) => {
+  return (
+    <button className={className} onClick={onClick}>
+      {children}
+    </button>
+  );
 };
 
 export { Button };

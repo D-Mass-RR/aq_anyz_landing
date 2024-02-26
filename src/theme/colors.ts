@@ -1,3 +1,5 @@
-export enum COLORS {
+enum COLORS {
   WHITE = "#FFFFFF",
 }
+
+export { COLORS };

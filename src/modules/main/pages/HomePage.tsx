@@ -2,7 +2,7 @@
 import { FC } from "react";
 
 /** Components **/
-import { Header, FullPageSlider } from "../components";
+import { Header, FullPageSlider, Button } from "../components";
 
 const HomePage: FC = () => {
   return (
@@ -10,6 +10,9 @@ const HomePage: FC = () => {
       <Header />
       <section className="bg-black">
         <FullPageSlider />
+        <Button className={"bg-gradient-to-b from-red to-light-red"}>
+          Press me
+        </Button>
       </section>
     </main>
   );
