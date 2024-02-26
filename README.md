@@ -6,6 +6,8 @@
 - 🎨 [Tailwind with JIT](https://tailwindcss.com/) - next generation utility-first CSS
 - 👑 [Modular architecture](https://javascript.plainenglish.io/modular-react-applications-c316783df0aa)
 - 🗂 [Absolute imports](https://github.com/vitejs/vite/issues/88#issuecomment-762415200)
+- 📺 [Swiper](https://swiperjs.com/react) - powerful tool for building sliders
+- 😃 [Hero icons](https://heroicons.com/)
 - ☁️ Deploy on Netlify, zero-config
 
 ### Coding Style
