@@ -1,3 +1,17 @@
+// eslint-disable-next-line @typescript-eslint/no-var-requires
+const plugin = require("tailwindcss");
+
+const backfaceVisibility = plugin(function ({ addUtilities }) {
+  addUtilities({
+    ".backface-visible": {
+      "backface-visibility": "visible",
+    },
+    ".backface-hidden": {
+      "backface-visibility": "hidden",
+    },
+  });
+});
+
 module.exports = {
   theme: {
     fontSize: {
@@ -23,10 +37,10 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        sans: ["Gilroy"],
+        "sans-serif": ["Gilroy"],
       },
     },
   },
   content: ["./src/**/*.tsx", "./src/**/*.css"],
-  plugins: [require("@tailwindcss/forms")],
+  plugins: [require("@tailwindcss/forms"), backfaceVisibility],
 };

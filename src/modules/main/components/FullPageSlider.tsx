@@ -1,7 +1,7 @@
 /** Core **/
-import { FC } from "react";
-import { Controller } from "swiper/modules";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { FC, Ref } from "react";
+import { EffectFade, Navigation } from "swiper/modules";
+import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
 
 /** Assets **/
 import img1 from "../../../assets/images/bg_image1.png";
@@ -13,26 +13,30 @@ import "swiper/css";
 
 const bg_images = [img1, img2, img3];
 
-// type Props = undefined;
-const FullPageSlider: FC = () => {
+type Props = {
+  sliderRef: Ref<SwiperRef>;
+};
+
+const FullPageSlider: FC<Props> = ({ sliderRef }) => {
   return (
-    <div className="absolute top-0 w-full h-full bg-black z-0 ">
+    <div className="absolute top-0 left-0 w-full h-full bg-black z-0">
       <Swiper
-        allowSlideNext={false}
-        allowSlidePrev={false}
-        watchSlidesProgress={true}
-        modules={[Controller]}
+        ref={sliderRef}
+        modules={[Navigation, EffectFade]}
         slidesPerView={1}
+        loopPreventsSliding={false}
+        navigation={{ enabled: true }}
+        effect={"slide"}
+        loop
+        allowTouchMove={false}
+        noSwiping
       >
         {bg_images.map((item, index) => (
-          <SwiperSlide
-            className="bg-black backdrop:blur-lg w-full sm:max-h-96 z-0"
-            key={index}
-          >
+          <SwiperSlide className="bg-black sm:max-h-96 z-0" key={index}>
             <img
               src={item}
               alt={item}
-              className="object-cover h-full brightness-50 blur-lg"
+              className="h-[100vh] w-full brightness-75 blur-xl"
             />
           </SwiperSlide>
         ))}

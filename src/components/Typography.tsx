@@ -1,15 +1,18 @@
 import { FC } from "react";
-import { COLORS } from "../theme/";
-import { FONT_SIZES } from "../theme/fontSizes.ts";
+import { TypographyTypes } from "../theme/typography";
+import { ValueOf } from "../@types/helpers.ts";
 
 type Props = {
-  size?: FONT_SIZES | number;
-  color?: typeof COLORS;
   children: string;
-  styles?: string;
+  variant?: ValueOf<typeof TypographyTypes>;
+  className?: string;
 };
-const Typography: FC<Props> = ({ children, styles }) => {
-  return <span className={styles}>{children}</span>;
+const Typography: FC<Props> = ({
+  children,
+  variant = TypographyTypes.base,
+  className,
+}) => {
+  return <span className={variant + className && className}>{children}</span>;
 };
 
 export { Typography };

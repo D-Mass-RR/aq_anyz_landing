@@ -8,21 +8,24 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  main {
-  }
   body {
     overscroll-behavior: none;
+    overflow-x: hidden;
+    height: 100%;
+    font-family: Gilroy, sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
   }
 
   #root,
   body,
   html,
   main {
-    height: 100%;
   }
 }
 
 @font-face {
-  font-family: "Gilroy";
-  src: local("Gilroy"), url(./assets/fonts) format("otf");
+  font-family: Gilroy, sans-serif;
+  src: local("Gilroy"), url(./assets/fonts) format("ttf");
 }
