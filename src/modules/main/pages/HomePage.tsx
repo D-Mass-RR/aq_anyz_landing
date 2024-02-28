@@ -13,7 +13,13 @@ import img3 from "../../../assets/images/slide3.png";
 import cakeImg from "../../../assets/images/cake.png";
 import meatImg from "../../../assets/images/meat.png";
 import fastfoodImg from "../../../assets/images/fastfood.png";
-import { ChevronLeftIcon, ChevronRightIcon } from "@heroicons/react/24/outline";
+import teaImg from "../../../assets/images/tea.png";
+import assetImg from "../../../assets/images/asset.png";
+import {
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  ArrowRightIcon,
+} from "@heroicons/react/24/outline";
 import { ReactComponent as Dashes } from "assets/svg/dashes.svg";
 import { ReactComponent as Menu } from "assets/svg/menu.svg";
 import { ReactComponent as Calendar } from "assets/svg/calendar.svg";
@@ -229,8 +235,8 @@ const HomePage: FC = () => {
         </div>
       </section>
       <section
-        id="#about"
-        className="bg-gradient-to-l px-20 pt-24 w-full from-red to-light-red h-[150vh]"
+        id="#products"
+        className="bg-gradient-to-l px-20 pt-24 w-full from-red to-light-red h-[130vh]"
       >
         <div className="products_grid gap-6 max-h-[9.5rem]">
           <div className="products_grid__haeding px-8 py-6 rounded-2xl bg-opacity-30 text-white w-full bg-[#FFFFFF40] font-bold text-2xl">
@@ -297,8 +303,59 @@ const HomePage: FC = () => {
             </div>
           </div>
           <div className="products_grid__more flex items-end">
-            <div className="px-8 py-6 h-full max-h-28 flex items-center rounded-2xl bg-opacity-30 text-white w-full bg-[#FFFFFF40] text-lg">
+            <div className="px-8 py-6 h-full max-h-28 flex items-center justify-between rounded-2xl bg-opacity-30 text-white w-full bg-[#FFFFFF40] text-lg">
               <p className="w-2/3">Посмотреть нашу продукцию подробнее</p>
+              <div
+                onClick={onPrevSlide}
+                className="rounded-full w-[3.4rem] h-[3.4rem] bg-red flex items-center justify-center"
+              >
+                <ArrowRightIcon className="h-9 w-9 text-white" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section
+        id="#about"
+        className="bg-[#f9f9f9] w-full h-[150vh] px-20 pt-40"
+      >
+        <div className="flex">
+          <div className="w-1/2 shadow-[0px_3px_14px_0px_#D4D4D440] py-4 px-8 rounded-2xl h-[39rem] bg-white mr-2">
+            <h5 className="text-2xl font-bold text-red">О нас</h5>
+            <div className="mt-20 text-lg leading-tight">
+              <p className="mb-6">
+                Мы работаем на рынке Казахстана уже более 10 лет. За это время
+                жители и гости страны успели по достоинству оценить нашу кухню,
+                а о некоторых ее блюдах уже впору слагать легенды!
+              </p>
+              <p className="mb-6">
+                Все эти годы вы были знакомы с семьей наших ресторанов под
+                такими названиями как:{" "}
+                <span className="text-red">«Восточный двор»</span>,{" "}
+                <span className="text-red"> «Узбечка №1»</span> и{" "}
+                <span className="text-red">«Z-1»</span>.
+              </p>
+              <p>
+                Сохраняя самое лучшее от каждого из них, мы с радостью сообщаем
+                Вам, о перезапуске в новом формате под единым именем -{" "}
+                <span className="font-bold text-red">AQ AÑYZ</span>
+              </p>
+            </div>
+          </div>
+          <div className="w-1/2 h-[38rem] ml-2">
+            <div className="w-full mb-3.5 h-1/2">
+              <img
+                src={teaImg}
+                alt="tea"
+                className="object-cover rounded-2xl h-full w-full"
+              />
+            </div>
+            <div className="w-full h-1/2">
+              <img
+                src={assetImg}
+                alt="asset"
+                className="object-cover rounded-2xl h-full w-full"
+              />
             </div>
           </div>
         </div>
