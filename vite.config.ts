@@ -7,6 +7,9 @@ export default defineConfig((configEnv) => {
   const isDevelopment = configEnv.mode === "development";
 
   return {
+    build: {
+      commonjsOptions: { transformMixedEsModules: true }, // Change
+    },
     plugins: [
       react(),
       svgr({

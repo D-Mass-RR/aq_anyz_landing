@@ -2,7 +2,7 @@
 import { FC, useCallback, useRef, useState } from "react";
 
 /** Components **/
-import { Header, FullPageSlider, Button } from "../components";
+import { Header, FullPageSlider, Button, FoodCard } from "../components";
 import { Typography } from "components/Typography.tsx";
 import { Swiper, SwiperRef, SwiperSlide } from "swiper/react";
 
@@ -19,7 +19,7 @@ import { ReactComponent as MenuDashes } from "assets/svg/menu_dashes.svg";
 
 /** Styles **/
 import "swiper/css";
-import { mock_categories } from "../components/__mock__";
+import { mock_categories, mock_food } from "../components/__mock__";
 
 /** Data **/
 const images = [img1, img2, img3];
@@ -181,7 +181,7 @@ const HomePage: FC = () => {
           </div>
         </div>
       </section>
-      <section id="#menu" className="h-[100vh] bg-[#f9f9f9] px-20 w-full">
+      <section id="#menu" className="h-[160vh] bg-[#f9f9f9] px-20 w-full">
         <div className="">
           <div className={"w-full flex lg:justify-between h-16"}>
             <div>
@@ -217,8 +217,20 @@ const HomePage: FC = () => {
               </span>
             ))}
           </div>
+          <div className="lg:grid-cols-3 grid gap-6 mt-24">
+            {mock_food.map((item) => (
+              <FoodCard {...item} key={item.id} />
+            ))}
+          </div>
         </div>
       </section>
+      <section
+        id="#about"
+        className="bg-gradient-to-l from-red to-light-red h-[150vh]"
+      ></section>
+      <section id="#reviews"></section>
+      <section id="#map"></section>
+      <section id="#job"></section>
     </main>
   );
 };
