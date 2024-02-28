@@ -67,7 +67,7 @@ const Header: FC = () => {
         {/* mobile navigation */}
         <div
           className={`absolute mt-2 w-full bg-white overflow-hidden flex flex-col lg:hidden gap-12 origin-top duration-700 ${
-            !open ? "h-0" : "h-80"
+            !open ? "h-0" : "h-72"
           }`}
         >
           <div className="px-8 pt-4 text-lg">

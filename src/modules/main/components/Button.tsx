@@ -10,7 +10,9 @@ type Props = ComponentPropsWithoutRef<"button"> & {
 const Button: FC<Props> = ({ children, onClick, className }) => {
   return (
     <button className={className + " text-white py-4 "} onClick={onClick}>
-      <Typography className="font-semibold text-lg">{children}</Typography>
+      <Typography className="font-semibold text-lg sm:text-base">
+        {children}
+      </Typography>
     </button>
   );
 };

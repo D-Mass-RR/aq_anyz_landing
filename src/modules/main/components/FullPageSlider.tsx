@@ -36,7 +36,7 @@ const FullPageSlider: FC<Props> = ({ sliderRef }) => {
             <img
               src={item}
               alt={item}
-              className="h-[100vh] w-full brightness-75 blur-xl"
+              className="h-[120vh] w-full brightness-75 object-contain blur-xl"
             />
           </SwiperSlide>
         ))}
