@@ -1,9 +1,12 @@
-import { FC } from "react";
+/** Core **/
+import { FC, ReactNode } from "react";
+
+/** Types **/
 import { TypographyTypes } from "../theme/typography";
 import { ValueOf } from "../@types/helpers.ts";
 
 type Props = {
-  children: string;
+  children: ReactNode;
   variant?: ValueOf<typeof TypographyTypes>;
   className?: string;
 };

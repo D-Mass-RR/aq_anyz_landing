@@ -1,9 +1,9 @@
 type ScrollOptions = {
   id?: string;
 };
+/** @param {id} string - HTML tag id**/
 const scrollById = ({ id }: ScrollOptions): void => {
   const target = window.document.getElementById(`#${id}`);
-  console.log("click", id, target);
   if (target) {
     window.scrollTo({
       top: target.offsetTop,

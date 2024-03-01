@@ -16,7 +16,7 @@ import "../styles/main.css";
 
 const HomePage: FC = () => {
   return (
-    <main className="h-full sm:overflow-x-hidden tracking-tight leading-tight">
+    <main className="h-full overflow-y-hidden sm:overflow-x-hidden tracking-tight leading-tight">
       <Header />
       <MainSection />
       <AdvantagesSection />

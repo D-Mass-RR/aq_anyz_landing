@@ -1,4 +1,6 @@
+/** Core **/
 import { FC, PropsWithChildren } from "react";
+
 import { scrollById } from "../../../../utils";
 
 type Props = {
