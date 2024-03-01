@@ -27,6 +27,6 @@
 }
 
 @font-face {
-  font-family: Gilroy, sans-serif;
-  src: local("Gilroy"), url(./assets/fonts) format("ttf");
+  font-family: Gilroy sans-serif;
+  src: local("Gilroy"), url(./assets/fonts/) format("ttf");
 }

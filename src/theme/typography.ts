@@ -1,6 +1,6 @@
 const TypographyTypes = {
   base: "text-base text-white",
-  sm: "text-sm ",
+  sm: "text-sm",
 };
 
 export { TypographyTypes };

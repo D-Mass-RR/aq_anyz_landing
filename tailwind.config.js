@@ -37,8 +37,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        "sans-serif": ["Gilroy"],
-        light: ["Gilroy-Light"],
+        "sans-serif": ["Gilroy-Light"],
       },
     },
   },
