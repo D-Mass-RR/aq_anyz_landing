@@ -90,7 +90,7 @@ const AboutSection: FC = () => {
           </div>
         </div>
       </div>
-      <div className={"mt-96"}>
+      <div className={"mt-80"}>
         <div className="absolute mt-24 flex items-center justify-start w-[46rem] h-[46rem] overflow-hidden rounded-[80px] bg-red -right-44 rotate-[24deg]">
           <img
             src={bgImg2}

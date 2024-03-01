@@ -7,4 +7,13 @@ interface IFood {
   id: number;
 }
 
-export type { IFood };
+interface IMapData {
+  title: string;
+  several_branches?: number;
+  address_list: string[];
+  schedule: string;
+  image: string;
+  icon: string;
+}
+
+export type { IFood, IMapData };

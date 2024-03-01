@@ -8,6 +8,8 @@ import {
   AdvantagesSection,
   AboutSection,
   ProductsSection,
+  ReviewsSection,
+  MapSection,
 } from "../components/sections";
 
 /** Styles **/
@@ -16,15 +18,16 @@ import "../styles/main.css";
 
 const HomePage: FC = () => {
   return (
-    <main className="h-full overflow-y-hidden sm:overflow-x-hidden tracking-tight leading-tight">
+    <main className="h-full overflow-y-hidden overflow-x-hidden tracking-tight leading-tight">
       <Header />
       <MainSection />
       <AdvantagesSection />
       <ProductsSection />
       <AboutSection />
-      <section id="#reviews"></section>
-      <section id="#map"></section>
-      <section id="#job"></section>
+      <ReviewsSection />
+      <MapSection />
+      <section id="#vacancies"></section>
+      <footer id="#footer"></footer>
     </main>
   );
 };

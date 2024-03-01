@@ -1,4 +1,5 @@
 import { IFood } from "../../@types/";
+import { IMapData } from "../../@types/data.ts";
 
 import lagman from "../../../../assets/images/lagman.png";
 import plov from "../../../../assets/images/plov.png";
@@ -6,6 +7,9 @@ import manty from "../../../../assets/images/manty.png";
 import lagman2 from "../../../../assets/images/lagman2.png";
 import dumgaza from "../../../../assets/images/dumgaza.png";
 import kebab from "../../../../assets/images/kebab.png";
+
+import map1 from "../../../../assets/images/map1.png";
+import resImg from "../../../../assets/images/resImg.png";
 
 const mock_categories = [
   { food: "🍛", name: "Восточная кухня", id: 0 },
@@ -62,4 +66,15 @@ const mock_food: IFood[] = [
   },
 ];
 
-export { mock_categories, mock_food };
+const mock_map_data: IMapData[] = [
+  {
+    title: "Aq Anyz рестораны",
+    several_branches: 2,
+    address_list: ["Ул.Кунаева 14г, жк Нурсая-1", "Ул.Бокейхана 10"],
+    schedule: "Будние дни: 9:00 - 00:00 <br/> Выходные дни: 10:00 - 00:00",
+    image: map1,
+    icon: resImg,
+  },
+];
+
+export { mock_categories, mock_food, mock_map_data };
