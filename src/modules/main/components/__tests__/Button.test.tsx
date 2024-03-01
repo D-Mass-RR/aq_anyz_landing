@@ -9,7 +9,7 @@ describe("Button test", () => {
     const label = "This is a button";
 
     const { getByText, getByRole } = render(
-      <Button onClick={onClick}>{label}</Button>
+      <Button.Primary onClick={onClick}>{label}</Button.Primary>
     );
 
     const button = getByRole("button");
