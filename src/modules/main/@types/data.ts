@@ -11,7 +11,7 @@ interface IMapData {
   title: string;
   several_branches?: number;
   address_list: string[];
-  schedule: string;
+  schedule: string[];
   image: string;
   icon: string;
 }

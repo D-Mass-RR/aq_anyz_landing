@@ -4,6 +4,7 @@ import { Navigation } from "swiper/modules";
 import avaImg from "../../../../assets/images/ava1.png";
 import { ReactComponent as StarIcon } from "../../../../assets/svg/star.svg";
 
+// TODO: complete
 const ReviewsSection: FC = () => {
   return (
     <section className="h-[50vh] w-full bg-[#f9f9f9]" id="#reviews">
@@ -21,7 +22,6 @@ const ReviewsSection: FC = () => {
             nextEl: ".custom-next",
             prevEl: ".custom-prev",
           }}
-          // onScrollbarDragStart={(swiper, event, ) => }
         >
           <SwiperSlide className="max-w-[40rem] w-full flex justify-start">
             <div className="w-fit p-5 bg-white flex">

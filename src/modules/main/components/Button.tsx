@@ -1,5 +1,5 @@
 /** Core **/
-import { ComponentPropsWithoutRef, FC } from "react";
+import { ComponentPropsWithoutRef, FC, ReactNode } from "react";
 
 /** Types **/
 import { ButtonTypes } from "../@types";
@@ -13,8 +13,12 @@ type Props = ComponentPropsWithoutRef<"button"> & {
    *@ignore not used
    * **/
   variant?: ButtonTypes;
+
+  color?: "gradient" | "default";
+  icon?: ReactNode;
 };
 
+// TODO: remove margin from button
 const Primary: FC<Props> = ({ children, onClick, className }) => {
   return (
     <button
@@ -46,6 +50,28 @@ const Secondary: FC<Props> = ({ children, onClick, className }) => {
   );
 };
 
+const Default: FC<Props> = ({
+  children,
+  onClick,
+  icon,
+  color = "gradient",
+}) => {
+  return (
+    <button
+      className={
+        "text-white py-2 w-full h-fit sm:w-60 mb-[10px] rounded-xl flex items-center justify-center " +
+        (color === "gradient" ? "gradient" : "bg-black")
+      }
+      onClick={onClick}
+    >
+      {icon}
+      <Typography className="font-normal text-white text-lg sm:text-base">
+        {children}
+      </Typography>
+    </button>
+  );
+};
+
 /**
  * @example
  * ```jsx
@@ -56,6 +82,7 @@ const Secondary: FC<Props> = ({ children, onClick, className }) => {
 const Button = {
   Primary,
   Secondary,
+  Default,
 };
 
 export { Button };

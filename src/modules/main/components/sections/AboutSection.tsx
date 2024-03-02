@@ -9,7 +9,7 @@ import bgImg2 from "../../../../assets/images/bg2.png";
 
 const AboutSection: FC = () => {
   return (
-    <section id="#about" className="bg-[#f9f9f9] w-full h-[400vh] px-20 pt-40">
+    <section id="#about" className="bg-[#f9f9f9] w-full h-[380vh] px-20 pt-40">
       <div className="flex">
         <div className="w-1/2 shadow-[0px_3px_14px_0px_#D4D4D440] py-4 px-8 rounded-2xl h-[39rem] bg-white mr-2">
           <h5 className="text-2xl font-bold text-red">О нас</h5>

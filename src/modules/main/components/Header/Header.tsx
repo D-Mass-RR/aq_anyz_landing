@@ -30,10 +30,10 @@ const Header: FC = () => {
                 <HeaderLink to="about">
                   <Typography>О нас</Typography>
                 </HeaderLink>
-                <HeaderLink to="about">
+                <HeaderLink to="#">
                   <Typography>Карьера</Typography>
                 </HeaderLink>
-                <HeaderLink to="about">
+                <HeaderLink to="map">
                   <Typography>Контакты</Typography>
                 </HeaderLink>
               </div>

@@ -9,7 +9,11 @@ import dumgaza from "../../../../assets/images/dumgaza.png";
 import kebab from "../../../../assets/images/kebab.png";
 
 import map1 from "../../../../assets/images/map1.png";
+import map2 from "../../../../assets/images/map2.png";
+import map3 from "../../../../assets/images/map3.png";
 import resImg from "../../../../assets/images/resImg.png";
+import resImg2 from "../../../../assets/images/res2Img.png";
+import resImg3 from "../../../../assets/images/res3.png";
 
 const mock_categories = [
   { food: "🍛", name: "Восточная кухня", id: 0 },
@@ -71,9 +75,23 @@ const mock_map_data: IMapData[] = [
     title: "Aq Anyz рестораны",
     several_branches: 2,
     address_list: ["Ул.Кунаева 14г, жк Нурсая-1", "Ул.Бокейхана 10"],
-    schedule: "Будние дни: 9:00 - 00:00 <br/> Выходные дни: 10:00 - 00:00",
+    schedule: ["Будние дни: 9:00 - 00:00", "Выходные дни: 10:00 - 00:00"],
     image: map1,
     icon: resImg,
+  },
+  {
+    title: "Aq Anyz кондитерский мир",
+    address_list: ["Ул.Республики 1Б"],
+    schedule: ["Будние дни: 9:00 - 00:00", "Выходные дни: 10:00 - 00:00"],
+    image: map2,
+    icon: resImg2,
+  },
+  {
+    title: "Восточный двор ресторан",
+    address_list: ["Ул.Кунаева 14г, жк Нурсая-1", "Ул.Бокейхана 10"],
+    schedule: ["Будние дни: 9:00 - 00:00", "Выходные дни: 10:00 - 00:00"],
+    image: map3,
+    icon: resImg3,
   },
 ];
 

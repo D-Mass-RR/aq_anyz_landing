@@ -2,32 +2,32 @@
 import { FC } from "react";
 
 /** Components **/
-import { Header } from "../components";
+import { Footer, Header } from "../components";
 import {
   MainSection,
   AdvantagesSection,
   AboutSection,
   ProductsSection,
-  ReviewsSection,
   MapSection,
 } from "../components/sections";
 
 /** Styles **/
 import "swiper/css";
 import "../styles/main.css";
+import { MenuSection } from "../components/sections/MenuSection.tsx";
 
 const HomePage: FC = () => {
   return (
-    <main className="h-full overflow-y-hidden overflow-x-hidden tracking-tight leading-tight">
+    <main className="h-full overflow-y-hidden overflow-x-hidden bg-[#f9f9f9] tracking-tight leading-tight">
       <Header />
       <MainSection />
       <AdvantagesSection />
+      <MenuSection />
       <ProductsSection />
       <AboutSection />
-      <ReviewsSection />
       <MapSection />
       <section id="#vacancies"></section>
-      <footer id="#footer"></footer>
+      <Footer />
     </main>
   );
 };
