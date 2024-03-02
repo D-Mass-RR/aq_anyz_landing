@@ -1,4 +1,3 @@
-
 ## Features
 
 - ⚡️ [React 18](https://beta.reactjs.org/)
@@ -7,6 +6,8 @@
 - 🎨 [Tailwind with JIT](https://tailwindcss.com/) - next generation utility-first CSS
 - 👑 [Modular architecture](https://javascript.plainenglish.io/modular-react-applications-c316783df0aa)
 - 🗂 [Absolute imports](https://github.com/vitejs/vite/issues/88#issuecomment-762415200)
+- 📺 [Swiper](https://swiperjs.com/react) - powerful tool for building sliders
+- 😃 [Hero icons](https://heroicons.com/)
 - ☁️ Deploy on Netlify, zero-config
 
 ### Coding Style
@@ -17,8 +18,8 @@
 ### Code Style Guidelines
 
 - [Primitive obsession](https://elkevincodea.hashnode.dev/modeling-primitives-as-value-objects-in-typescript) - Typing tip
-- [React style guide](https://react-styleguidist.js.org/docs/documenting/)  - Component Documentation Guidelines
-- [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)  - Readable meaning to commit messages
+- [React style guide](https://react-styleguidist.js.org/docs/documenting/) - Component Documentation Guidelines
+- [Conventional commits](https://www.conventionalcommits.org/en/v1.0.0/) - Readable meaning to commit messages
 
 ### Dev tools
 
@@ -55,4 +56,3 @@ Go to [Netlify](https://app.netlify.com/start) and select your repository, `OK` 
 If pre-commit hooks are not working be sure that you have installed husky: `husky install`.
 
 By default this command should be triggered after yarn/npm deps are installed.
-

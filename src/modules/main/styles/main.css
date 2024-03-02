@@ -1,0 +1,38 @@
+.products_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "title title f f"
+    "cake cake f f"
+    "cake cake d d"
+    "cake cake d d"
+    "cake cake end end";
+}
+.products_grid__cake {
+  grid-area: cake;
+}
+.products_grid__haeding {
+  grid-area: title;
+}
+.products_grid__foods {
+  grid-area: f;
+}
+.products_grid__fastfoods {
+  grid-area: d;
+}
+.products_grid__more {
+  grid-area: end;
+}
+
+.gradient {
+  background: linear-gradient(143.42deg, #d90217 -34.99%, #ff4b5c 103.66%);
+}
+
+.footer_gradient {
+  background: linear-gradient(
+    151.69deg,
+    #2c2b2b 11%,
+    #000000 43.03%,
+    #2c2b2b 84.37%
+  );
+}

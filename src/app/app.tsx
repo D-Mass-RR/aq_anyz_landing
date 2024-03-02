@@ -1,8 +1,7 @@
+import HomePage from "../modules/main";
+
 function App() {
-  return (
-    <main>
-    </main>
-  );
+  return <HomePage />;
 }
 
 export default App;
